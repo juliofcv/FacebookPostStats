@@ -13,6 +13,7 @@
 package edu.artec.apps.facebook.reports;
 
 import edu.artec.apps.facebook.SFTPConf;
+import edu.artec.apps.facebook.net.OpenURL;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -141,6 +142,10 @@ public class reportOne {
         writer.close();
         if (publish)
             edu.artec.apps.facebook.net.PublishReport.publishInHost(file, SFTPConf.server, SFTPConf.port, SFTPConf.login, SFTPConf.password, SFTPConf.workdir);
+        else {
+            System.out.println("Reporte local generado en: "+file.toString());
+            OpenURL.run(file);
+        }
         
     }
     

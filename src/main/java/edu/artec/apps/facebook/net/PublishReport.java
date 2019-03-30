@@ -29,7 +29,8 @@ public class PublishReport {
         client.disconnect();
         System.out.println("Report generated in:");
         String urlReport = "http://"+workdir+"/"+upfile.getName();
-        System.out.println(urlReport);
+        System.out.println("Reporte local generado en: "+file.toString());
+        System.out.println("Reporte en servidor generado en: "+urlReport);
         OpenURL.run(urlReport);
     }
     

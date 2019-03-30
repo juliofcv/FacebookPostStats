@@ -42,13 +42,13 @@ public class FacebookPostStats {
      
      
      // Datos de conexión a Facebook
-     private static final String userPage = "USER PAGER";
+     private static final String userPage = "USER_PAGE";
      private static final String urlPage = "https://www.facebook.com/"+userPage+"/";
      
      private static final String API_VERSION = "v3.2";    
-     private static final String ACCESS_TOKEN = "PAGE ACCESS TOKEN";
+     private static final String ACCESS_TOKEN = "ACCESS_TOKEN";
      
-     private static final String localFilePath = "PATH";
+     private static final String localFilePath = "D:\\";
      
      private static final boolean publish = true;
      
@@ -180,7 +180,7 @@ public class FacebookPostStats {
                     value = value.startsWith("\"other\":") ? value.substring(8) : value;
                     value = value.equals("") ? "0" : value;
                      va = va + value + ",";
-                    
+                    System.out.println("XXX\t"+value);
                     if(d.getName().equals("post_impressions_unique")) {
                         sumvalue = sumvalue + Integer.valueOf(value);
                         cc = cc+1;
