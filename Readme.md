@@ -102,4 +102,4 @@ public static final String workdir = "WORK DIR";
 ```
 
 ## Autor
-* **Julio Chinchilla** - *ARTEC* - [LinkedIn](www.linkedin.com/in/juliofchv)
+* **Julio Chinchilla** - *ARTEC* - [LinkedIn](https://www.linkedin.com/in/juliofchv)
