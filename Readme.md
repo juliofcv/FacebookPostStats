@@ -1,11 +1,11 @@
 # Facebook Post Stats
 
 Conexión a facebook mediante Facebook Graph Api para verificación de estadísticas de Posts de una determinada página de facebook, desarrollado por Julio Chinchilla
-**Herramientas utilizadas**
 ```
-JAVA JDK 12
-GOOGLE CHARTS
-NETBEANS 11
+**Herramientas utilizadas**
+* JAVA JDK 12
+* GOOGLE CHARTS
+* NETBEANS 11
 ```
 
 # FacebookPostStats.java
