@@ -3,7 +3,7 @@
 Conexión a facebook mediante Facebook Graph Api para verificación de estadísticas de Posts de páginas de Facebook
 
 ## Autor
-* **Julio Chinchilla** - *ARTEC* - [LinkedIn](https://www.linkedin.com/in/juliofchv)
+* [**Julio Chinchilla**](https://www.linkedin.com/in/juliofchv)
 
 ## Herramientas utilizadas
 * JDK 12
