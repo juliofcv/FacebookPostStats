@@ -2,7 +2,7 @@
 
 Conexión a facebook mediante Facebook Graph Api para verificación de estadísticas de Posts de páginas de Facebook
 
-## Autor
+## Desarrollador
 * [**Julio Chinchilla**](https://www.linkedin.com/in/juliofchv)
 
 ## Herramientas utilizadas
