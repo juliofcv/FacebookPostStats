@@ -28,7 +28,7 @@ Versión de la API de facebook, corroborar documentación oficial
 ```
 private static final String ACCESS_TOKEN = "ACCESS_TOKEN";
 ```
-Token de acceso a la página, revise los accessos de aplicación o utilice un token de usuario en el [Explorador de la API Graph] (https://developers.facebook.com/tools/explorer/)
+Token de acceso a la página, revise los accessos de aplicación o utilice un token de usuario en el [Explorador de la API Graph](https://developers.facebook.com/tools/explorer/)
 
 ## localFilePath
 ```
