@@ -2,7 +2,7 @@
 
 Conexión a facebook mediante Facebook Graph Api
 
-##Ejecute la clase FacebookPostStats##
+##Ejecute la clase FacebookPostStats
 
 ######Tenga en cuenta las siguientes variables de la clase principal######
 
