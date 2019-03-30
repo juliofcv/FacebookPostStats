@@ -28,7 +28,7 @@ private static final String urlPage = "https://www.facebook.com/"+userPage+"/";
 ```
      
 ## API_VERSION
-Versión de la API de facebook, corroborar documentación oficial [Facebook Page Insights](https://developers.facebook.com/docs/graph-api/reference/v3.2/insights)
+Versión de la API de facebook, corroborar documentación oficial [Facebook Page Insights](https://developers.facebook.com/docs/graph-api/reference/insights)
 ```
 private static final String API_VERSION = "v3.2";    
 ```
@@ -66,7 +66,7 @@ private static final boolean publish = true;
 ```
 
 # Parameters.java
-En esta clase puede agregar las metricas determinadas en la documentación de [Facebook Page Insights](https://developers.facebook.com/docs/graph-api/reference/v3.2/insights)
+En esta clase puede agregar las metricas determinadas en la documentación de [Facebook Page Insights](https://developers.facebook.com/docs/graph-api/reference/insights)
 ```
 metric.add("PARAMETER");
 ```
