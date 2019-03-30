@@ -15,10 +15,13 @@ import java.util.List;
 public abstract class Parameters {
     
     
-    
+    /**
+     * @@link https://developers.facebook.com/docs/graph-api/reference/v3.2/insights
+     * @return 
+     */
     public static List<String> metrics () {
         List<String> metric = new ArrayList<>();
-        metric.add("post_impressions_unique");
+        metric.add("post_impressions_unique"); // default para promedio
         
         metric.add("post_impressions_fan_unique");
         metric.add("post_impressions_organic_unique");

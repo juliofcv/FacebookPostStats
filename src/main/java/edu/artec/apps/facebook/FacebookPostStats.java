@@ -37,9 +37,7 @@ import java.util.List;
 public class FacebookPostStats {
     
     //https://developers.facebook.com/tools/explorer/
-    //https://developers.facebook.com/docs/graph-api/reference/v3.2/insights
-    
-     
+    //https://developers.facebook.com/docs/graph-api/reference/v3.2/insights  
      
      // Datos de conexión a Facebook
      private static final String userPage = "USER_PAGE";
@@ -91,20 +89,17 @@ public class FacebookPostStats {
             edatecount = false;
             va = "\t\t\t\t\t['"+stdate+"',  ";
             System.out.println("Explore: "+data.getUrlPost()+" "+stdate);
-
             for (DataInsights d: dataPost) {
                 List<String> values = d.getValues();
-                System.out.println("XXX\t"+d.getName());
+                System.out.println(">\t"+d.getName());
                 for (String value: values) {
                     value = value.startsWith("\"other\":") ? value.substring(8) : value;
                     value = value.equals("") ? "0" : value;
                      va = va + value + ",";
-                    System.out.println("XXX\t"+value);
+                    System.out.println(">\t"+value);
                     if(d.getName().equals("post_impressions_unique")) {
                         sumvalue = sumvalue + Integer.valueOf(value);
-                        cc = cc+1;
-                        
-                           
+                        cc = cc+1;                       
                     }
                 }
             }
@@ -118,18 +113,14 @@ public class FacebookPostStats {
         System.out.println("sumvalue: "+sumvalue);
         System.out.println("cc: "+cc);
         System.out.println("promedio: "+promedio);
-        
         Collections.reverse(valueSeparated);
-        for(String str: valueSeparated) {
+        for(String str: valueSeparated)
             val = val + str;
-        }
-
         val = StrUtils.removeLastCharacterAt(val,',');
         tittle = tittle + "{ type: 'string', role: 'selection' }],\n";
         System.out.println(tittle);
         String export = tittle+val;
         dataexp.add(export);
-
         String timeC = Time.getTime(new SimpleDateFormat("dd/MM/yyyy HH:mm:ss"));
         String timeD = Time.getTime(new SimpleDateFormat("ddMMyyyyHHmmss"));
         System.out.println("reporte");
@@ -141,10 +132,6 @@ public class FacebookPostStats {
                 +"reporte generado: "+timeC+ "\\n";
         String localFileReport = localFilePath+userPage+timeD+".html";
         reportOne.generate(dataexp, tittle, localFileReport, String.valueOf(metric.size()+1), publish);
-
     }
-
-
     
 }
-

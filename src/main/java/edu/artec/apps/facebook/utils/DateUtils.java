@@ -1,7 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/* 
+ * Facebook Post Stats Public Version 0.1a
+ * 
+ * 30/03/2019
+ *
+ * Copyright 2013-2018 GIGADATTA, S.A.
+ * Julio Francisco Chinchilla Valenzuela
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  */
 package edu.artec.apps.facebook.utils;
 
@@ -15,7 +21,7 @@ import java.util.TimeZone;
 
 /**
  *
- * @author imstu
+ * @author Julio Chinchilla
  */
 public class DateUtils {
     

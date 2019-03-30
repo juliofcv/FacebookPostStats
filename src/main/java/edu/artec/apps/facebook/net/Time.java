@@ -31,8 +31,6 @@ public class Time {
             return new Date().toString();
         }
     }
-
-
     
     public static String getInetTime(DateFormat df) throws UnknownHostException, IOException {
         NTPUDPClient timeClient = new NTPUDPClient();

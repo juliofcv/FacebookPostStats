@@ -11,7 +11,6 @@
  */
 package edu.artec.apps.facebook.insights;
 
-
 import edu.artec.apps.facebook.pojo.DataInsights;
 import edu.artec.apps.facebook.utils.FacebookPageUtils;
 import static edu.artec.apps.facebook.utils.JSONUtils.readJSon;
@@ -42,10 +41,7 @@ public class PostInsights {
     public List<DataInsights> getData() {
         return data;
     }
-    
-    /*
-    * @Reference: https://developers.facebook.com/docs/graph-api/reference/v3.1/insights
-    */
+
     public PostInsights (String API_VERSION, String token, String urlPost, String metric) throws Exception {
         urlPost = StrUtils.removeDiagonal(urlPost);
         List<String> urlDir  = StrUtils.urlDir(urlPost);
@@ -57,10 +53,6 @@ public class PostInsights {
           
     }
 
-    /*
-    * @Reference: https://developers.facebook.com/docs/graph-api/reference/v2.9/insights
-    */
-    
     private synchronized void request(String API_VERSION, String token, String idPage, String idPost, String metric) throws Exception {
         String requestURLPost = graphUrl+API_VERSION+"/"+idPage+"_"+idPost+insightsPostVideo+metric+"?access_token="+token;
         System.out.println(requestURLPost);
