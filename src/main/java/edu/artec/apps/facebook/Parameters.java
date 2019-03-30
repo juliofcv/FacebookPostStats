@@ -32,9 +32,7 @@ public abstract class Parameters {
         metric.add("post_engaged_users");
         
         metric.add("post_negative_feedback_unique");
-        metric.add("post_negative_feedback_by_type_unique");
-        metric.add("post_clicks_unique");
-        metric.add("post_clicks_by_type_unique");
+        metric.add("post_clicks_unique");      
         
         metric.add("post_reactions_like_total");
         metric.add("post_reactions_love_total");
