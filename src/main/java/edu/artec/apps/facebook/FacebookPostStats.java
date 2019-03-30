@@ -48,70 +48,16 @@ public class FacebookPostStats {
      private static final String API_VERSION = "v3.2";    
      private static final String ACCESS_TOKEN = "ACCESS_TOKEN";
      
+     private static final String startDate  = "01-03-2019T06:00:00"; 
+     private static final String endDate    = "30-03-2019T05:59:59";
+     
      private static final String localFilePath = "D:\\";
      
      private static final boolean publish = true;
      
      
      public static void main(String... args) throws Exception {         
-         String startDate = "1-03-2019T06:00:00"; //"II/XX/2018 06:00:00" para comenzar a las 00:00 horas del día II Hora de Guatemala
-         String endDate = "30-03-2019T05:59:59"; //"UU/XX/2018 05:59:59" para finalizar a las 23:59 horas del día UU Hora de Guatemala
          generate (startDate,endDate);
-         //byYear();
-     }
-     
-     
-     public static void byYear () throws Exception {
-         
-         String year = "2016";
-          
-          String startDate = "1-01-"+year+"T06:00:00"; //"II/XX/2018 06:00:00" para comenzar a las 00:00 horas del día II
-          String endDate = "31-01-"+year+"T05:59:59"; //"UU/XX/2018 05:59:59" para finalizar a las 23:59 horas del día UU
-          generate (startDate,endDate);
-          
-          startDate = "1-02-"+year+"T06:00:00"; //"II/XX/2018 06:00:00" para comenzar a las 00:00 horas del día II
-          endDate = "28-02-"+year+"T05:59:59"; //"UU/XX/2018 05:59:59" para finalizar a las 23:59 horas del día UU
-          generate (startDate,endDate);
-          
-          startDate = "1-03-"+year+"T06:00:00"; //"II/XX/2018 06:00:00" para comenzar a las 00:00 horas del día II
-          endDate = "31-03-"+year+"T05:59:59"; //"UU/XX/2018 05:59:59" para finalizar a las 23:59 horas del día UU
-          generate (startDate,endDate);
-          
-          startDate = "1-04-"+year+"T06:00:00"; //"II/XX/2018 06:00:00" para comenzar a las 00:00 horas del día II
-          endDate = "30-04-"+year+"T05:59:59"; //"UU/XX/2018 05:59:59" para finalizar a las 23:59 horas del día UU
-          generate (startDate,endDate);
-          
-          startDate = "1-05-"+year+"T06:00:00"; //"II/XX/2018 06:00:00" para comenzar a las 00:00 horas del día II
-          endDate = "31-05-"+year+"T05:59:59"; //"UU/XX/2018 05:59:59" para finalizar a las 23:59 horas del día UU
-          generate (startDate,endDate);
-          
-          startDate = "1-06-"+year+"T06:00:00"; //"II/XX/2018 06:00:00" para comenzar a las 00:00 horas del día II
-          endDate = "30-06-"+year+"T05:59:59"; //"UU/XX/2018 05:59:59" para finalizar a las 23:59 horas del día UU
-          generate (startDate,endDate);
-          
-          startDate = "1-07-"+year+"T06:00:00"; //"II/XX/2018 06:00:00" para comenzar a las 00:00 horas del día II
-          endDate = "31-07-"+year+"T05:59:59"; //"UU/XX/2018 05:59:59" para finalizar a las 23:59 horas del día UU
-          generate (startDate,endDate);
-          
-          startDate = "1-08-"+year+"T06:00:00"; //"II/XX/2018 06:00:00" para comenzar a las 00:00 horas del día II
-          endDate = "31-08-"+year+"T05:59:59"; //"UU/XX/2018 05:59:59" para finalizar a las 23:59 horas del día UU
-          generate (startDate,endDate);
-          
-          startDate = "1-09-"+year+"T06:00:00"; //"II/XX/2018 06:00:00" para comenzar a las 00:00 horas del día II
-          endDate = "30-09-"+year+"T05:59:59"; //"UU/XX/2018 05:59:59" para finalizar a las 23:59 horas del día UU
-          generate (startDate,endDate);
-          
-          startDate = "1-10-"+year+"T06:00:00"; //"II/XX/2018 06:00:00" para comenzar a las 00:00 horas del día II
-          endDate = "31-10-"+year+"T05:59:59"; //"UU/XX/2018 05:59:59" para finalizar a las 23:59 horas del día UU
-          generate (startDate,endDate);
-          
-          startDate = "1-11-"+year+"T06:00:00"; //"II/XX/2018 06:00:00" para comenzar a las 00:00 horas del día II
-          endDate = "30-11-"+year+"T05:59:59"; //"UU/XX/2018 05:59:59" para finalizar a las 23:59 horas del día UU
-          generate (startDate,endDate);
-          
-          startDate = "1-12-"+year+"T06:00:00"; //"II/XX/2018 06:00:00" para comenzar a las 00:00 horas del día II
-          endDate = "31-12-"+year+"T05:59:59"; //"UU/XX/2018 05:59:59" para finalizar a las 23:59 horas del día UU
-          generate (startDate,endDate);
      }
     
     public synchronized static void generate (String startDate, String endDate ) throws ParseException, Exception {
@@ -119,36 +65,10 @@ public class FacebookPostStats {
         List<String> dataexp = new ArrayList<>();
         FacebookPageUtils fb = new FacebookPageUtils(userPage, API_VERSION, ACCESS_TOKEN);
         PagePostData pageposts = new PagePostData(API_VERSION, ACCESS_TOKEN, urlPage, startDate, endDate);
-        List<String> metric = new ArrayList<>();
-        
-        metric.add("post_impressions_unique");
-        
-        /*
-        
-        metric.add("post_impressions_fan_unique");
-        metric.add("post_impressions_organic_unique");
-        metric.add("post_impressions_viral_unique");
-        metric.add("post_impressions_nonviral_unique");
-        metric.add("post_impressions_by_story_type_unique");
-        
-        metric.add("post_engaged_users");
-        
-        metric.add("post_negative_feedback_unique");
-        metric.add("post_negative_feedback_by_type_unique");
-        metric.add("post_clicks_unique");
-        metric.add("post_clicks_by_type_unique");*/
-        
-        metric.add("post_reactions_like_total");
-        metric.add("post_reactions_love_total");
-        metric.add("post_reactions_wow_total");
-        metric.add("post_reactions_haha_total");
-        metric.add("post_reactions_sorry_total");
-        metric.add("post_reactions_anger_total");
-        
+        List<String> metric = Parameters.metrics();      
         String metrics = "";
         for(String m:metric)
-            metrics = metrics +m+",";
-        
+            metrics = metrics +m+",";        
         metrics = StrUtils.removeLastCharacterAt(metrics, ',');
         //invocación de método para traducción
         final Translator translator = new Translator(Translator.Language.EN, Translator.Language.ES, Translator.NAME_TEMPLATE);
@@ -160,7 +80,6 @@ public class FacebookPostStats {
         boolean edatecount = true;
         List<String> valueSeparated = new ArrayList<>();
         List<DataPagePosts> dataPage = pageposts.getData();
-
         int cc = 0;
         int sumvalue = 0;
         for (DataPagePosts data: dataPage) {

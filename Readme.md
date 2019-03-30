@@ -2,7 +2,7 @@
 
 Conexión a facebook mediante Facebook Graph Api
 
-## FacebookPostStats.java
+# FacebookPostStats.java
 Clase principal a ejecutar
 
 ### Tenga en cuenta las siguientes variables de la clase principal
@@ -20,7 +20,7 @@ private static final String urlPage = "https://www.facebook.com/"+userPage+"/";
 ```
      
 ## API_VERSION
-Versión de la API de facebook, corroborar documentación oficial
+Versión de la API de facebook, corroborar documentación oficial [Facebook Page Insights](https://developers.facebook.com/docs/graph-api/reference/v3.2/insights)
 ```
 private static final String API_VERSION = "v3.2";    
 ```
@@ -29,6 +29,20 @@ private static final String API_VERSION = "v3.2";
 Token de acceso a la página, revise los accessos de aplicación o utilice un token de usuario en el [Explorador de la API Graph](https://developers.facebook.com/tools/explorer/)
 ```
 private static final String ACCESS_TOKEN = "ACCESS_TOKEN";
+```
+
+## startDate
+Hora de inicio del reporte defido en tiempo internacional UTC
+defina 06:00:00 para comenzar a las 00:00 horas del día II Hora de Guatemala
+```
+private static final String startDate  = "01-03-2019T06:00:00";
+```
+
+## endDate
+Hora de finalización del reporte defido en tiempo internacional UTC
+defina 05:59:59 para finalizar a las 23:59 horas Hora de Guatemala
+```
+private static final String endDate    = "30-03-2019T05:59:59";
 ```
 
 ## localFilePath
@@ -43,7 +57,13 @@ Valor booleano para indiciar si desea publicar el reporte mediante conexión SFT
 private static final boolean publish = true;
 ```
 
-## SFTPConf.java
+# Parameters.java
+En esta clase puede agregar las metricas determinadas en la documentación de [Facebook Page Insights](https://developers.facebook.com/docs/graph-api/reference/v3.2/insights)
+```
+metric.add("PARAMETER");
+```
+
+# SFTPConf.java
 En esta clase puede configurar una conexión SFTP par que el reporte sea subido directamente a un servidor
 
 ## server
@@ -65,7 +85,7 @@ public static final String login = "LOGIN";
 ```
 
 ## password
-passwor de conexión
+password de conexión
 ```
 public static final String password = "PASSWORD";
 ```
