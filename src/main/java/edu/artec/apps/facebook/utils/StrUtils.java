@@ -20,13 +20,6 @@ import java.util.List;
  * @author Julio Chinchilla
  */
 public class StrUtils {
-    
-    public static String removeDiagonal(String str) {
-        if (str != null && str.length() > 0 && str.charAt(str.length()-1)=='/') {
-            str = str.substring(0, str.length()-1);
-        }
-        return str;
-    }
 
     public static String removeLastCharacterAt (String str, char c) {
         if (str != null && str.length() > 0 && str.charAt(str.length() - 1) == c)

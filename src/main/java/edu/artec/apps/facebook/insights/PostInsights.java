@@ -43,7 +43,7 @@ public class PostInsights {
     }
 
     public PostInsights (String API_VERSION, String token, String urlPost, String metric) throws Exception {
-        urlPost = StrUtils.removeDiagonal(urlPost);
+        urlPost = StrUtils.removeLastCharacterAt(urlPost, '/');
         List<String> urlDir  = StrUtils.urlDir(urlPost);
         String idPost = String.valueOf(Long.parseLong(urlDir.get(urlDir.size()-1)));
         String userPage = urlDir.get(urlDir.size()-3);
