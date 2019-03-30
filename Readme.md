@@ -1,6 +1,6 @@
-# Facebook Video Stats
+# Facebook Post Stats
 
-Conexión a facebook mediante Facebook Graph Api
+Conexión a facebook mediante Facebook Graph Api para verificación de estadísticas de Posts de una determinada página de facebook, desarrollado por Julio Chinchilla
 
 # FacebookPostStats.java
 Clase principal a ejecutar
