@@ -1,6 +1,6 @@
 # Facebook Post Stats
 
-Conexión a facebook mediante Facebook Graph Api para verificación de estadísticas de Posts de una determinada página de facebook, desarrollado por Julio Chinchilla
+Conexión a facebook mediante Facebook Graph Api para verificación de estadísticas de Posts de páginas de Facebook
 
 ## Herramientas utilizadas
 * JDK 12
@@ -19,7 +19,7 @@ private static final String userPage = "USER_PAGE";
 ```
 
 ## urlPage
-Es la URL final de acceso a la página en conjunto con el ## userPage
+Es la URL final de acceso a la página en conjunto con el userPage
 ```
 private static final String urlPage = "https://www.facebook.com/"+userPage+"/";
 ```
@@ -100,3 +100,6 @@ directorio de trabajo de la conexión
 ```
 public static final String workdir = "WORK DIR"; 
 ```
+
+## Autor
+* **Julio Chinchilla** - *ARTEC* - [LinkedIn](www.linkedin.com/in/juliofchv)
