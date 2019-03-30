@@ -2,7 +2,8 @@
 
 Conexión a facebook mediante Facebook Graph Api
 
-## Ejecute la clase FacebookPostStats
+## FacebookPostStats.java
+Clase principal a ejecutar
 
 ### Tenga en cuenta las siguientes variables de la clase principal
 
@@ -42,6 +43,35 @@ Valor booleano para indiciar si desea publicar el reporte mediante conexión SFT
 private static final boolean publish = true;
 ```
 
-## SFTPConf
-
+## SFTPConf.java
 En esta clase puede configurar una conexión SFTP par que el reporte sea subido directamente a un servidor
+
+## server
+Dirección del servidor SFTPT
+```
+public static final String server = "SERVER";
+```
+
+## port
+Número de puerto de conexión por default 22
+```
+public static final int port = 22;
+```
+
+## login
+login o usuario de conexión
+```
+public static final String login = "LOGIN";
+```
+
+## password
+passwor de conexión
+```
+public static final String password = "PASSWORD";
+```
+
+## workdir
+directorio de trabajo de la conexión
+```
+public static final String workdir = "WORK DIR"; 
+```
