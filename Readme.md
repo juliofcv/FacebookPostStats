@@ -2,6 +2,9 @@
 
 Conexión a facebook mediante Facebook Graph Api para verificación de estadísticas de Posts de páginas de Facebook
 
+## Autor
+* **Julio Chinchilla** - *ARTEC* - [LinkedIn](https://www.linkedin.com/in/juliofchv)
+
 ## Herramientas utilizadas
 * JDK 12
 * Google Charts
@@ -100,6 +103,3 @@ directorio de trabajo de la conexión
 ```
 public static final String workdir = "WORK DIR"; 
 ```
-
-## Autor
-* **Julio Chinchilla** - *ARTEC* - [LinkedIn](https://www.linkedin.com/in/juliofchv)
