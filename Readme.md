@@ -1,5 +1,7 @@
 # Facebook Post Stats
 
+![fbPostStats](https://i.imgur.com/aJFzCGA.png)
+
 Conexión a facebook mediante Facebook Graph Api para verificación de estadísticas de Posts de páginas de Facebook
 
 ## Desarrollador
