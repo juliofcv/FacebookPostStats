@@ -1,6 +1,6 @@
 # Facebook Post Stats
 
-![fbPostStats](https://i.imgur.com/VZt8rJN.png)
+![fbPostStats](https://i.imgur.com/NNVEQZX.png)
 
 Conexión a facebook mediante Facebook Graph Api para verificación de estadísticas de Posts de páginas de Facebook
 
