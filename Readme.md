@@ -2,9 +2,9 @@
 
 ![fbPostStats](https://i.imgur.com/NNVEQZX.png)
 
-Conexión a facebook mediante Facebook Graph Api para verificación de estadísticas de Posts de páginas de Facebook
+Conexión a Facebook mediante Graph Api para verificación de estadísticas de Posts de páginas, verifique hasta 28 parámetros estadísticos para medir el rendimiento de su página
 
-## Desarrollador
+## Autor
 * [**Julio Chinchilla**](https://www.linkedin.com/in/juliofchv)
 
 ## Herramientas utilizadas
@@ -72,7 +72,7 @@ En esta clase puede agregar las metricas determinadas en la documentación de [F
 ```
 metric.add("PARAMETER");
 ```
-admite los siguientes parámetros
+el script está optimizado para los siguientes parámetros dedicados a Post
 ```
 post_impressions
 post_impressions_unique
