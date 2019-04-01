@@ -30,7 +30,7 @@ private static final String urlPage = "https://www.facebook.com/"+userPage+"/";
 ```
      
 ## API_VERSION
-Versión de la API de facebook, corroborar documentación oficial [Facebook Page Insights](https://developers.facebook.com/docs/graph-api/reference/insights)
+Versión de la API de facebook, corroborar la versión a utilizar y la documentación oficial [Facebook Page Insights](https://developers.facebook.com/docs/graph-api/reference/insights) la versión se debe de especificar con el formato "vM.m" donde 'M' es la versión Mayor y 'm' es la versión menor, la inicial 'v' debe de colocarse
 ```
 private static final String API_VERSION = "v3.2";    
 ```
@@ -71,6 +71,37 @@ private static final boolean publish = true;
 En esta clase puede agregar las metricas determinadas en la documentación de [Facebook Page Insights](https://developers.facebook.com/docs/graph-api/reference/insights)
 ```
 metric.add("PARAMETER");
+```
+admite los siguientes parámetros
+```
+post_impressions
+post_impressions_unique
+post_impressions_organic_unique
+post_impressions_fan_unique
+post_impressions_viral_unique
+post_impressions_paid_unique
+post_impressions_nonviral_unique
+post_impressions_by_story_type_unique
+post_impressions_fan_paid_unique
+post_impressions_organic
+post_impressions_fan
+post_impressions_viral
+post_impressions_paid
+post_impressions_nonviral
+post_impressions_by_story_type
+post_impressions_fan_paid
+post_reactions_like_total
+post_reactions_love_total
+post_reactions_wow_total
+post_reactions_haha_total
+post_reactions_sorry_total
+post_reactions_anger_total
+post_engaged_users
+post_negative_feedback
+post_negative_feedback_unique
+post_engaged_fan
+post_clicks
+post_clicks_unique
 ```
 
 # SFTPConf.java
