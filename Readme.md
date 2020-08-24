@@ -5,7 +5,7 @@
 Conexión a Facebook mediante Graph Api para verificación de estadísticas de Posts de páginas, verifique hasta 28 parámetros estadísticos para medir el rendimiento de su página
 
 ## Autor
-* [**Julio Chinchilla**](https://www.linkedin.com/in/juliofchv)
+* [**Julio Chinchilla**](https://www.linkedin.com/in/juliofcv)
 
 ## Herramientas utilizadas
 * JDK 12
